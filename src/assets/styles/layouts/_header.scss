@@ -1,0 +1,9 @@
+.mispan {
+    @include font-size-change;
+    
+    font-family: $font-family-serif;
+}
+
+.logo {
+    @include logo-size-change;
+}

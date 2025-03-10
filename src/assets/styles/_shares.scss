@@ -1,0 +1,51 @@
+
+@function screen-media($point) {
+    @if $point == x-small-screen {
+      @return $font-x-small;  
+    } @else if $point == small-screen {
+      @return $font-small; 
+    } @else if $point == medium-screen {
+      @return $font-medium;  
+    } @else if $point == large-screen {
+      @return $font-large;
+    } 
+}
+
+@mixin font-size-change {
+    font-size: screen-media(x-small-screen);
+   
+    // si es menor de 350px no puedo mostrar titulo
+    @media (max-width: 22rem) {
+      font-size: 0;
+    }
+
+    // a partir de 580px
+    @media (min-width: 25rem) {
+      font-size: screen-media(small-screen); 
+    }
+
+    // a partir de 768px
+    @media (min-width: 48rem) {
+      font-size: screen-media(medium-screen); 
+    }
+
+    // a partir de 1024px  
+    @media (min-width: 64rem) {
+        font-size: screen-media(large-screen);
+    }
+
+}
+
+@mixin logo-size-change {
+  max-width: 4rem;
+
+  // a partir de 605px
+  @media (min-width: 38rem) {
+    max-width: 7rem;
+  }
+
+  // a partir de 1024px
+  @media (min-width: 64rem) {
+    max-width: 11rem;
+  }
+}

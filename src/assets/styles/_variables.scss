@@ -1,0 +1,38 @@
+@use "sass:color";
+
+// fuente poppins light (300) para cuerpo
+@font-face {
+  font-family: Poppins-Light;
+  src:    url("../../assets/fonts/Poppins-Light.woff2") format("woff2"),
+          url("../../assets/fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+// fuente poppins bold (700) para cuerpo
+@font-face {
+  font-family: Poppins-Bold;
+  src:    url("../../assets/fonts/Poppins-Bold.woff2") format("woff2"),
+          url("../../assets/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+// fuente arvo regular (400) para cabeceras
+@font-face {
+  font-family: Arvo-Rgular;
+  src:    url("../../assets/fonts/Arvo.woff2") format("woff2"),
+          url("../../assets/fonts/Arvo.woff") format("woff");
+}
+
+$font-family-sans-serif: "Poppins-Light", -apple-system, blinkmacsystemfont, 
+  "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, 
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-sans-serif-bold: "Poppins-Light", -apple-system, blinkmacsystemfont, 
+  "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, 
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif: "Arvo-Regular", "Georgia", "Times New Roman", serif;
+$bk-primary: #dec69b;
+$bk-secondary: color.scale($bk-primary, $lightness: 70%);
+$font-large: 2.8rem;
+$font-medium: 2.2rem;
+$font-small: 1.5rem;
+$font-x-small: 1.1rem;
