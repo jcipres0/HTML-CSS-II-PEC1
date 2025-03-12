@@ -1,5 +1,5 @@
 .mispan {
-    @include font-size-change;
+    @include font-size-change("header");
     
     font-family: $font-family-serif;
 }

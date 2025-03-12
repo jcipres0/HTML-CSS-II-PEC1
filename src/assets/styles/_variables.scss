@@ -23,10 +23,11 @@
           url("../../assets/fonts/Arvo.woff") format("woff");
 }
 
+// por si hubiera algún problema con poppins o arvo dejo las de  por defecto según SO o navegador
 $font-family-sans-serif: "Poppins-Light", -apple-system, blinkmacsystemfont, 
   "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, 
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-sans-serif-bold: "Poppins-Light", -apple-system, blinkmacsystemfont, 
+$font-family-sans-serif-bold: "Poppins-Bold", -apple-system, blinkmacsystemfont, 
   "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, 
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-serif: "Arvo-Regular", "Georgia", "Times New Roman", serif;

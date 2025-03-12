@@ -1,37 +1,59 @@
+@use "sass:math";
 
-@function screen-media($point) {
+// si font-size-change se llama desde footer esta funcion recibe en b-origen la palabra footer y entonces divide para 2 el valor de cada variable, con esto cambio el tamaño de header y footer en una sola función porque para los texto de footer necesito que sean más pequeños, entiendo es una buena manera de reutilizar
+@function screen-media($point,$b-origen) {
     @if $point == x-small-screen {
-      @return $font-x-small;  
+      @if $b-origen == "footer"{
+          @return math.div($font-x-small, 1.5);  
+      } @else {
+          @return $font-x-small;
+      }  
     } @else if $point == small-screen {
-      @return $font-small; 
+        @if $b-origen == "footer"{
+            @return math.div($font-small, 2);  
+        } @else {
+            @return $font-small;
+        }   
     } @else if $point == medium-screen {
-      @return $font-medium;  
+        @if $b-origen == "footer"{
+            @return math.div($font-medium, 2.5);  
+        } @else {
+            @return $font-medium;
+        }     
     } @else if $point == large-screen {
-      @return $font-large;
+        @if $b-origen == "footer"{
+            @return math.div($font-large, 2.5);  
+        } @else {
+            @return $font-large;
+        }     
     } 
 }
 
-@mixin font-size-change {
-    font-size: screen-media(x-small-screen);
+@mixin font-size-change($origen) {
+    font-size: screen-media(x-small-screen,$origen);
    
-    // si es menor de 350px no puedo mostrar titulo
+    // si es menor de 350px no puedo mostrar titulo que no me cabe, pero sí debo mostrar los textos del footer, al no llamar a screen-media debo hacer el calculo dentro de este if
     @media (max-width: 22rem) {
-      font-size: 0;
+      @if $origen == "footer" {
+        font-size: math.div($font-x-small, 1.5);
+      } @else {
+        font-size:0;
+      }
     }
 
     // a partir de 580px
     @media (min-width: 25rem) {
-      font-size: screen-media(small-screen); 
+      font-size: screen-media(small-screen,$origen); 
     }
 
     // a partir de 768px
     @media (min-width: 48rem) {
-      font-size: screen-media(medium-screen); 
+      font-size: screen-media(medium-screen,$origen); 
     }
 
     // a partir de 1024px  
     @media (min-width: 64rem) {
-        font-size: screen-media(large-screen);
+        font-size: screen-media(large-screen,$origen);
     }
 
 }

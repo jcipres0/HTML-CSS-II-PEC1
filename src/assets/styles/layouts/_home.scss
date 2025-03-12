@@ -1,55 +1,38 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* body{
-  @include font-size-responsive;
+body{
+  @include font-size-change("home");
+  
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  height: 100vh; 
+} 
 
-  font-size: 20rem;
-  font-family: $font-family-sans-serif;
-  background-color: #dec69b;
-
-} */
-
-
-/* .uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+.contenedor {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #f00  ;
 }
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
-  }
+.comunsec {
+  padding: 1.5rem;
+  height: 100%;
+  scroll-snap-align: start; 
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
+.presentation {
+  background-color: #f5deb3;
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+.ingredients {
+  background-color: #7fffd4;
 }
- */
+
+.recipe {
+  background-color: #5f9ea0;
+}
