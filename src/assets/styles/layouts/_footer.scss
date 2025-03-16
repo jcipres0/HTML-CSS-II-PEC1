@@ -1,3 +1,39 @@
-.foota {
+footer {
+    @include head-foot;
     @include font-size-change("footer");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: $color-hover;
+}
+
+.legales, .redes {
+    justify-content: center;
+    width: 100%;
+}
+
+@media (min-width: $size-screen2) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
 }

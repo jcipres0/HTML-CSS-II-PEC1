@@ -23,6 +23,8 @@
           url("../../assets/fonts/Arvo.woff") format("woff");
 }
 
+// VARIABLES PARA FUENTES
+
 // por si hubiera algún problema con poppins o arvo dejo las de  por defecto según SO o navegador
 $font-family-sans-serif: "Poppins-Light", -apple-system, blinkmacsystemfont, 
   "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, 
@@ -31,9 +33,23 @@ $font-family-sans-serif-bold: "Poppins-Bold", -apple-system, blinkmacsystemfont,
   "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, 
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-serif: "Arvo-Regular", "Georgia", "Times New Roman", serif;
-$bk-primary: #dec69b;
-$bk-secondary: color.scale($bk-primary, $lightness: 70%);
 $font-large: 2.8rem;
 $font-medium: 2.2rem;
 $font-small: 1.5rem;
 $font-x-small: 1.1rem;
+
+// VARIABLES PARA COLORES
+
+$bk-primary: #f5f5f5;
+$bk-secondary: color.scale($bk-primary, $lightness: 70%);
+$bk-presentation: #f6e8cc80;
+$bk-ingredients: #f4d03f80;
+$bk-recipe: #d4af3780;
+$color-hover: #664606ba;
+
+// VARIABLES PARA RESOLUCION DE PANTALLA
+
+$size-screen0: 25rem;
+$size-screen1: 34rem;
+$size-screen2: 48rem;
+$size-screen3: 64rem;

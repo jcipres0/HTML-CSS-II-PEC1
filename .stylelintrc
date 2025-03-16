@@ -4,15 +4,16 @@
 		"stylelint-order"
 	],
   "rules":{
-    "selector-max-type": 1,
+    "selector-max-type": 3,
     "media-feature-range-notation": "prefix",
     "unit-disallowed-list": ["px"],
     "length-zero-no-unit": true,
     "selector-max-id": 0,
     "declaration-no-important": true,
     "property-no-unknown": true,
-    "shorthand-property-no-redundant-values": true,
+    "declaration-block-no-redundant-longhand-properties": null,
     "color-named": "never",
+    "named-grid-areas-no-invalid": true,
     "selector-class-pattern": "^[a-z]([-]?[a-z0-9]+)*(__[a-z0-9]([-]?[a-z0-9]+)*)?(--[a-z0-9]([-]?[a-z0-9]+)*)?(\\@[a-zA-Z0-9\\-]+)?$",
     "order/order": [
 			"custom-properties", 

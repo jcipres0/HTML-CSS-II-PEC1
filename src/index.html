@@ -10,18 +10,60 @@
 
     <title>Mis migas</title>
   </head>
-  <body class="container flex-grow-1 overflow-auto">  
+  <body>  
     <include src="./views/header.html"></include>
-    <!-- con flex-grow-1 consigo que el contenido de la web ocupe todo menos la parte que es del header y el footer -->
-    <main class="d-flex flex-column flex-grow-1 mt-3 rounded-2 contenedor">
+    <main class="contenedor">
 
-      <section class="align-items-center min-vh-100 comunsec presentation">
-        <h2>presentación del plato</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore ut eos quibusdam. Est vero a veritatis molestiae ipsam quod omnis et commodi, officia facilis eos architecto mollitia rem sunt vel.</p>
+      <section class="comunsec presentation">
+        <div class="tittle">
+          <h2>Presentación del plato</h2>
+        </div>
+        
+        <div class="photo">
+          <img src="assets/images/Migas-final.jpg" class="img-fluid rounded" alt="Imagen plato de migas">
+        </div>
+        <div class="description">
+          <p>Este es el contenido de mi texto. En móviles aparece debajo de la imagen, en pantallas grandes a la derecha.</p>
+        </div>
+        <div class="extended">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi quibusdam cum nemo voluptatibus sed possimus quam corrupti, aut quo. Recusandae tempore animi quidem eius, laboriosam assumenda distinctio possimus reiciendis optio.</p>
+        </div>
+        
+      </section>
+      <section class="comunsec ingredients">
+        <div class="tittle">
+          <h2>Ingredientes</h2>
+        </div>
+        
+        <div class="photo">
+          <img src="assets/images/Migas-final.jpg" class="img-fluid rounded" alt="Imagen plato de migas">
+        </div>
+        <div class="description">
+          <p>Este es el contenido de mi texto. En móviles aparece debajo de la imagen, en pantallas grandes a la derecha.</p>
+        </div>
+        <div class="extended">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi quibusdam cum nemo voluptatibus sed possimus quam corrupti, aut quo. Recusandae tempore animi quidem eius, laboriosam assumenda distinctio possimus reiciendis optio.</p>
+        </div>
+        
+      </section>
+      <section class="comunsec recipe">
+        <div class="tittle">
+          <h2>La madre de todas recetas</h2>
+        </div>
+        
+        <div class="photo">
+          <img src="assets/images/Migas-final.jpg" class="img-fluid rounded" alt="Imagen plato de migas">
+        </div>
+        <div class="description">
+          <p>Este es el contenido de mi texto. En móviles aparece debajo de la imagen, en pantallas grandes a la derecha.</p>
+        </div>
+        <div class="extended">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi quibusdam cum nemo voluptatibus sed possimus quam corrupti, aut quo. Recusandae tempore animi quidem eius, laboriosam assumenda distinctio possimus reiciendis optio.</p>
+        </div>
         
       </section>
 
-      <section class="align-items-center min-vh-100 comunsec ingredients">
+     <!--  <section class="align-items-center min-vh-100 comunsec ingredients">
         <h2>ingredientes de la receta</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum excepturi obcaecati quibusdam, doloremque quos minima voluptatibus iste hic rem rerum ex totam possimus recusandae, provident doloribus velit perferendis impedit et.</p>
        
@@ -31,7 +73,7 @@
         <h2>preparación</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, accusamus numquam soluta inventore provident minus saepe dolore error laudantium architecto consequuntur velit, cum, optio eos unde aut alias repudiandae similique.</p>
        
-      </section>
+      </section> -->
 
     </main>
     <include src="./views/footer.html"></include>

@@ -1,9 +1,32 @@
+.hcontenedor {
+    @include head-foot;
+}
+
+.hnav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
 .mispan {
     @include font-size-change("header");
     
     font-family: $font-family-serif;
+    margin: 0 auto;
 }
 
 .logo {
     @include logo-size-change;
+}
+
+.navbar-toggler {
+    display: block;
+}
+
+// pongo 55rem que sería el valor que da iPad en firefox developer
+@media (min-width: 55rem) {
+    .navbar-toggler {
+        display: none;
+    }
 }

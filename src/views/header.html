@@ -1,27 +1,11 @@
-<!-- uso container-fluid para poder gestionar siempre que la cabecera ocupe todo el ancho visible -->
-<header class="container-fluid mt-1">
-  <!-- como siempre el expand-lg para que haga automático mostrar el menú hamburguesa o elementos -->
-  <nav class="navbar navbar-expand-lg shadow">
-    <div class="container d-flex">
-      <a class="navbar-brand" href="index.html">
-        <img class="logo" src="assets/images/logo-recipe.png" alt="logo recipe">
-      </a>
-      <!-- no pongo el texto en h1 sino que lo haga bootstrap, luego hago que se centre el solo en horizontal -->
-      <span class="navbar-text mx-auto mispan">Migas a la aragonesa</span>
-      <!-- hay que ponerle navbar-toggler para que desplegue el menu, luego el collapse para hacer el juego de expander y contraer #mynavbar -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false">
+<header class="hcontenedor">
+  <nav class="hnav">
+    <a href="index.html">
+      <img class="logo" src="assets/images/logo-recipe.png" alt="logo recipe">
+    </a>
+    <span class="mispan">Migas a la aragonesa</span>
+      <button class="navbar-toggler" type="button">
         <i class="fa-solid fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">menu 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">menu 2</a>
-          </li>
-        </ul>
-      </div>
-    </div>
   </nav>
 </header>
