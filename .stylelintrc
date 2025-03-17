@@ -6,7 +6,6 @@
   "rules":{
     "selector-max-type": 3,
     "media-feature-range-notation": "prefix",
-    "unit-disallowed-list": ["px"],
     "length-zero-no-unit": true,
     "selector-max-id": 0,
     "declaration-no-important": true,

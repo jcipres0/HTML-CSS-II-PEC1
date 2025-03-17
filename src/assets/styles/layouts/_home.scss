@@ -16,7 +16,7 @@ body{
 .contenedor {
   @include font-size-change("home");
 
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: scroll;
   scrollbar-width: thin;
   display: flex;
@@ -31,7 +31,8 @@ body{
   gap: 0.5rem;
   padding: 1rem;
   min-height: 100vh;
-  border-radius: 0.5rem;
+
+ /*  border-radius: 0.5rem; */
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto 1fr;
   grid-template-areas:
@@ -39,7 +40,12 @@ body{
     "photo"
     "description"
     "extended";
-  scroll-snap-align: start; 
+  scroll-snap-align: start;
+  overflow-y: auto;
+}
+
+.comunsec h2 {
+  font-size: 1.2rem;
 }
 
 .tittle{
@@ -48,6 +54,15 @@ body{
 
 .photo{
   grid-area: photo;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  
+  // para móvil pongo 224px el tamaño de las imágenes
+  max-width: 14rem;
 }
 
 .description{
@@ -70,7 +85,11 @@ body{
   background-color: $bk-recipe;
 }
 
-@media (min-width: $size-screen1){
+.lite{
+  border-radius: 5px;
+}
+
+@media (min-width: 680px){
   .comunsec{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 1fr;
@@ -78,5 +97,19 @@ body{
     "tittle tittle"
     "photo description"
     "extended extended"
+  }
+
+  .comunsec h2 {
+    font-size: 2rem;
+  }
+
+  .photo img {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1024px){
+  .photo img {
+    max-width: 512px;    
   }
 }
