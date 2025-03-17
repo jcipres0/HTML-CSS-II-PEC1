@@ -16,8 +16,10 @@ body{
 .contenedor {
   @include font-size-change("home");
 
-  scroll-snap-type: y proximity;
+  /* scroll-snap-type: y proximity;
   overflow-y: scroll;
+  scrollbar-width: thin; */
+  overflow-y: auto;
   scrollbar-width: thin;
   display: flex;
   flex-direction: column;
@@ -30,9 +32,10 @@ body{
   display: grid;
   gap: 0.5rem;
   padding: 1rem;
-  min-height: 100vh;
 
- /*  border-radius: 0.5rem; */
+  /* min-height: 100vh; */
+
+  /*  border-radius: 0.5rem; */
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto 1fr;
   grid-template-areas:
@@ -40,8 +43,9 @@ body{
     "photo"
     "description"
     "extended";
-  scroll-snap-align: start;
-  overflow-y: auto;
+    
+ /*  scroll-snap-align: start;
+  overflow-y: auto; */
 }
 
 .comunsec h2 {
