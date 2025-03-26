@@ -13,6 +13,19 @@ body{
   height: 100vh; 
 } 
 
+figcaption {
+  font-size: 0.6rem;
+}
+
+figcaption a {
+  text-decoration: none;
+}
+
+figcaption a:hover{
+  color:#f00;
+}
+
+
 .contenedor {
   @include font-size-change("home");
 
@@ -34,8 +47,9 @@ body{
   padding: 1rem;
 
   /* min-height: 100vh; */
-
+  
   /*  border-radius: 0.5rem; */
+  
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto 1fr;
   grid-template-areas:
@@ -63,7 +77,7 @@ body{
 .photo img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 0.4rem;
   
   // para móvil pongo 224px el tamaño de las imágenes
   max-width: 14rem;
@@ -90,10 +104,10 @@ body{
 }
 
 .lite{
-  border-radius: 5px;
+  border-radius: 0.4rem;
 }
 
-@media (min-width: 680px){
+@media (min-width: $size-screen2){
   .comunsec{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 1fr;
@@ -108,12 +122,16 @@ body{
   }
 
   .photo img {
-    max-width: 400px;
+    max-width: 25rem;
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: $size-screen3){
   .photo img {
-    max-width: 512px;    
+    max-width: 32rem;    
+  }
+
+  figcaption {
+    font-size: 0.8rem;
   }
 }

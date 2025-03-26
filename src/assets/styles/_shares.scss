@@ -1,3 +1,4 @@
+
 @use "sass:math";
 
 // si font-size-change se llama desde footer esta funcion recibe en b-origen la palabra footer y entonces divide para 2 el valor de cada variable, con esto cambio el tamaño de header y footer en una sola función porque para los texto de footer necesito que sean más pequeños, entiendo es una buena manera de reutilizar
@@ -43,10 +44,13 @@
     } 
 }
 
+
 @mixin font-size-change($origen) {
     font-size: screen-media(x-small-screen,$origen);
    
-    // si es menor de 350px no puedo mostrar titulo que no me cabe, pero sí debo mostrar los textos del footer, al no llamar a screen-media debo hacer el calculo dentro de este if
+    // si es menor de 350px no puedo mostrar titulo que no me cabe,
+    // pero sí debo mostrar los textos del footer, al no llamar a screen-media
+    // debo hacer el calculo dentro de este if
     @media (max-width: 22rem) {
       @if $origen == "footer" or $origen == "home" {
         font-size: math.div($font-x-small, 1.5);
@@ -86,7 +90,7 @@
   }
 }
 
- @mixin head-foot {
+@mixin head-foot {
     max-width: 75rem;
     width: calc(100% - 0.7rem);
     margin: 0.5rem 1rem;

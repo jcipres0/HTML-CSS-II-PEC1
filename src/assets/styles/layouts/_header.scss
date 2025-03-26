@@ -24,7 +24,7 @@
     display: block;
 }
 
-// pongo 55rem que sería el valor que da iPad en firefox developer
+// pongo 55rem valor que da iPad en firefox developer
 @media (min-width: 55rem) {
     .navbar-toggler {
         display: none;

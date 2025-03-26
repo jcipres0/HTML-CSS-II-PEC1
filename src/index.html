@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -19,20 +19,29 @@
           <h2>Presentación del plato</h2>
         </div>
         
-        <div class="photo">
+        <figure class="photo">
+
+
           <picture>
             <source
-              srcset="assets/images/migas-224px-1.png 1x, assets/images/migas-448px-2.png 2x, assets/images/migas-672px-3.png 3x"
+              srcset="assets/images/migas-224px-1.webp 1x, assets/images/migas-448px-2.webp 2x, assets/images/migas-672px-3.webp 3x"
               media="(max-width: 767px)">
             <source
-              srcset="assets/images/migas-400px-1.png 1x, assets/images/migas-800px-2.png 2x, assets/images/migas-1200px-3.png 3x"
+              srcset="assets/images/migas-400px-1.webp 1x, assets/images/migas-800px-2.webp 2x, assets/images/migas-1200px-3.webp 3x"
               media="(min-width: 768px) and (max-width: 1024px)">
             <source
-              srcset="assets/images/migas-512px-1.png 1x, assets/images/migas-1024px-2.png 2x, assets/images/migas-1536px-3.png 3x"
+              srcset="assets/images/migas-512px-1.webp 1x, assets/images/migas-1024px-2.webp 2x, assets/images/migas-1536px-3.webp 3x"
               media="(min-width: 1025px)">
-            <img src="assets/images/migas-400px-1.png" alt="imagen migas">
+            <img src="assets/images/migas-400px-1.webp" alt="imagen migas">
           </picture>
-        </div>
+
+
+          
+          <figcaption>
+            Plato de migas - 
+            <a href="https://commons.wikimedia.org/wiki/File:Migas_-_Con_uvas_y_chistorra.JPG" target="_blank">wikimedia commons - Tamorlan</a>
+          </figcaption>
+        </figure>
         <div class="description">
           <p>Las migas aragonesas son un plato tradicional aragonés. Es una receta rústica que ha sido parte de la cultura gastronómica aragonesa durante generaciones. Preparar migas aragonesas es un acto de amor y paciencia, donde cada ingrediente aporta un toque de sabor y textura únicos.</p>
         </div>
@@ -47,20 +56,25 @@
           <h2>Ingredientes</h2>
         </div>
         
-        <div class="photo">
+        <figure class="photo">
           <picture>
             <source
-              srcset="assets/images/pan-duro-224px-1.png 1x, assets/images/pan-duro-448px-2.png 2x, assets/images/pan-duro-672px-3.png 3x"
+              srcset="assets/images/pan-duro-224px-1.webp 1x, assets/images/pan-duro-448px-2.webp 2x, assets/images/pan-duro-672px-3.webp 3x"
               media="(max-width: 767px)">
+              
             <source
-              srcset="assets/images/pan-duro-400px-1.png 1x, assets/images/pan-duro-800px-2.png 2x, assets/images/pan-duro-1200px-3.png 3x"
+              srcset="assets/images/pan-duro-400px-1.webp 1x, assets/images/pan-duro-800px-2.webp 2x, assets/images/pan-duro-1200px-3.webp 3x"
               media="(min-width: 768px)">
             <source
-              srcset="assets/images/pan-duro-512px-1.png 1x, assets/images/pan-duro-1024px-2.png 2x, assets/images/pan-duro-1536px-3.png 3x"
+              srcset="assets/images/pan-duro-512px-1.webp 1x, assets/images/pan-duro-1024px-2.webp 2x, assets/images/pan-duro-1536px-3.webp 3x"
               media="(min-width: 1024px)">
-            <img src="assets/images/pan-duro-400px-1.png" alt="imagen pan duro">
+            <img src="assets/images/pan-duro-400px-1.webp" alt="imagen pan duro">
           </picture>
-        </div>
+          <figcaption>
+            Pan para migas - 
+            <a href="https://unsplash.com/es/fotos/pan-moreno-sobre-mesa-de-madera-marron-nVoDL1YDWRE" target="_blank">unsplash - Monika Grabkowska</a>
+          </figcaption> 
+        </figure>
         <div class="description">
           <p>Los ingredientes son muy varibales, ya que hay muchas formas de hacer las migas, tantas como productos quieras aprovechar, por ejemplo, si sobra un poco de chorizo y no se sabe qué hacer con el, se usa para las migas, si se va a caducar un huevo que parce sobra por la nevera, se usa para las migas, es decir, aquello que se queira, pero, lo más típico de las migas aragonesas será usar los siguientes ingredientes:</p>
         </div>
@@ -80,17 +94,20 @@
         <div class="tittle">
           <h2>Preparación de la receta</h2>
         </div>
-        <div class="photo">
-          <lite-youtube class="lite" videoid="12V3pC_vZZg"></lite-youtube>
-        </div>
+        <figure class="photo">
+          <lite-youtube class="lite" videoid="12V3pC_vZZg" loading="lazy"></lite-youtube>
+          <figcaption>
+            La Pera Limonera - Aragón Televisión 
+          </figcaption>
+        </figure>
         <div class="description">
           <p>El secreto de unas buenas migas pasará por preparar el pan correctamente, esto les dará la textura y el tamaño adecuado y una buena disposición a empapar todos los sabores que el aciete tendrá de la longaniza y la papada. Si se pueden hacer en una brasa con leña sería el punto definitivo. Los pasos de la receta son los siguientes:</p>
         </div>
         <div class="extended">
           <ol>
             <li>Trocear el pan duro en migas pequeñas, una vez están troceadas y metidas en un recipiente, deben ser salpicadas de agua con la mano de forma uniforme, esta es la clave de todo, todas deben estar un poquico húmedas, pero no empapadas de agua, si no, no cogerán el sabor del aceite.</li>
-            <li>Mientras las migas reposan húmedas, se echa una buena cantidad de aceite de oliva y, a fuego lento, se añade el ajo y la papada troceada. Durante unos pocos minutos la papada soltará en el aciete una buena cantidad de grasa y entonces será el momento de echar la longaniza en trozos pequeños (pues se comerá con cuchara) y durante unos pocos minutos dejamos que suelte también su grasa en el aciete.</li>
-            <li>Con las migas húmedas y el aceite lleno de sabor de la papada, el ajo y la longaniza, se vuelcan las migas en el recipiente donde está el aceite, ahora, con el fuego muy bajo, se remueven, constantemente y sin descanso, las migas con el aciete y el resto de ingredientes. Finalmente se añade un poco de pimentón dulce y se sigue removiendo hasta que las migas tengan su color típico, así sabemos que es el momento de emplatar.</li>
+            <li>Mientras las migas reposan húmedas, se echa en un recipiente una buena cantidad de aceite de oliva y, a fuego lento, se añade el ajo y la papada troceada. Durante unos pocos minutos la papada soltará en el aciete una buena cantidad de grasa y entonces será el momento de echar la longaniza en trozos pequeños (pues se comerá con cuchara) y durante unos pocos minutos dejamos que suelte también su grasa en el aciete.</li>
+            <li>Con las migas húmedas y el aceite lleno de sabor de la papada, el ajo y la longaniza, se vuelcan las migas en el recipiente donde está el aceite, ahora, con el fuego muy bajo, se remueven las migas con el aciete y el resto de ingredientes, constantemente y sin descanso. Finalmente se añade un poco de pimentón dulce y se sigue removiendo hasta que las migas tengan su color típico, así sabemos que es el momento de emplatar.</li>
             <li>En el momento de servir es cuando se puede decidir añadir otros ingredientes como la uva, un huevo frito u otros dependiendo de los gustos de cada persona.</li>
           </ol>
         </div>
